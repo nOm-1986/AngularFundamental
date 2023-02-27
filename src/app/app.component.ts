@@ -9,11 +9,20 @@ export class AppComponent {
   name = 'Fabian Beltran';
   age = 89;
   imagen = 'https://picsum.photos/200/300';
-  btnDisabled = false;
+  btnDisabled = true;
 
   person = {
     name: 'Adrian Beltrán',
     age: 37,
     avatar: 'https://picsum.photos/200/300'
   }
+
+  toggleButton() {
+    this.btnDisabled = !this.btnDisabled;
+  }
+
+  increaseAge(){
+    this.person.age += 1;
+  }
+
 }
