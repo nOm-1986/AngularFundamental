@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Fabian Beltran';
-  age = 36;
-  imagen = 'https://source.unsplash.com/random';
+  age = 89;
+  imagen = 'https://picsum.photos/200/300';
+  btnDisabled = false;
+
+  person = {
+    name: 'Adrian Beltrán',
+    age: 37,
+    avatar: 'https://picsum.photos/200/300'
+  }
 }
